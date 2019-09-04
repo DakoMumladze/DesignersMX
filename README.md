@@ -1,2 +1,9 @@
 # DesignersMX
-Test task
+
+## Build Setup
+
+``` bash
+# install dependencies
+$ npm install
+
+
