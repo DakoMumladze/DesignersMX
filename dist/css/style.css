@@ -7032,6 +7032,9 @@ a.text-dark:hover, a.text-dark:focus {
 .mr-10 {
   margin-right: 0.625rem; }
 
+.mt-100 {
+  margin-top: 6.25rem; }
+
 .mr-29 {
   margin-right: 1.8438rem; }
 
@@ -7039,18 +7042,25 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'Roboto', sans-serif; }
 
 .img-small {
-  height: 75px; }
+  height: 4.6875rem; }
 
 .img-medium {
-  height: 150px; }
+  height: 9.375rem; }
 
 .img-large {
-  height: 300px; }
+  height: 18.75rem; }
+
+.bb-10 {
+  border-bottom: 10px solid #fff; }
 
 .main-img-container {
-  background: url("../../assets/images/Hero.png") no-repeat center;
-  background-size: cover;
-  padding-top: 6.25rem; }
+  background-image: url("../../assets/images/Hero.png");
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  padding-top: 6.25rem;
+  box-shadow: 4px 14px 11px -6px rgba(0, 0, 0, 0.75); }
   .main-img-container .main-menu-bar {
     width: 2.1875rem;
     height: 0.1875rem;
@@ -7058,6 +7068,9 @@ a.text-dark:hover, a.text-dark:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
   .main-img-container .main-logo {
     height: 1.875rem; }
+    @media (max-width: 576px) {
+      .main-img-container .main-logo {
+        height: 1.4rem; } }
   .main-img-container .main-search {
     height: 1.5625rem; }
   .main-img-container .main-info {
@@ -7065,16 +7078,22 @@ a.text-dark:hover, a.text-dark:focus {
     .main-img-container .main-info .main-info-play {
       font-size: 1rem;
       line-height: 1.375rem;
-      letter-spacing: 0.2778rem; }
+      letter-spacing: 0.2778rem;
+      opacity: 0.4; }
     .main-img-container .main-info .main-info-title {
       font-size: 2.1875rem;
       line-height: 3rem;
       letter-spacing: 2.5rem; }
+      @media (max-width: 576px) {
+        .main-img-container .main-info .main-info-title {
+          font-size: 2rem;
+          letter-spacing: 1rem;
+          word-break: break-all; } }
     .main-img-container .main-info .main-info-widget {
       max-width: 9rem;
       padding-top: 4.4375rem; }
       .main-img-container .main-info .main-info-widget img {
-        height: 0.75rem; }
+        height: 1rem; }
       .main-img-container .main-info .main-info-widget span {
         opacity: 0.5;
         font-size: 0.875rem;
@@ -7085,11 +7104,35 @@ a.text-dark:hover, a.text-dark:focus {
       border-width: 2px;
       padding: 0.5rem 3.25rem 0.5rem 3.25rem;
       font-size: 1.125rem;
+      font-style: italic;
       border-radius: 0.5rem;
       background-color: rgba(0, 0, 0, 0.5); }
   .main-img-container .main-album {
     padding-top: 10rem;
     margin-bottom: -6.25rem; }
+    @media (max-width: 1130px) {
+      .main-img-container .main-album {
+        margin-bottom: 0;
+        padding-bottom: 2.5rem; } }
+    @media (max-width: 1130px) {
+      .main-img-container .main-album .bb-10 {
+        border: none; } }
+    @media (max-width: 735px) {
+      .main-img-container .main-album .mt-md-15 {
+        margin-top: 15px; } }
+    @media (max-width: 1130px) {
+      .main-img-container .main-album .main-album-last {
+        margin: 0;
+        display: flex;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: center; } }
+    @media (max-width: 1130px) {
+      .main-img-container .main-album .main-album-last .main-album-last-box {
+        margin-right: 10px; } }
+    @media (max-width: 1130px) {
+      .main-img-container .main-album .main-album-last .main-album-last-box .img-medium, .main-img-container .main-album .main-album-last .main-album-last-box .img-large {
+        height: 4.6875rem; } }
 
 .about {
   padding-top: 9.0625rem;
